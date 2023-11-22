@@ -427,7 +427,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "INSERT INTO plantilla_clase_baile (rango_tiempo_minutos,nombre_plantilla,usuario_fk_plantilla, rango_cancelar, fecha_inicio, fecha_fin, tema) VALUES (@tiempo, @nombre , @idusuario, @cancelar  , @fecha_inicio, @fecha_fin,  @tema )";
+            string sql = "INSERT INTO  plantilla_agendamiento (rango_tiempo_minutos,nombre_plantilla,usuario_fk_plantilla, rango_cancelar, fecha_inicio, fecha_fin, tema) VALUES (@tiempo, @nombre , @idusuario, @cancelar  , @fecha_inicio, @fecha_fin,  @tema )";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@tiempo", tiempo);
             comando.Parameters.AddWithValue("@nombre", nombre);
@@ -456,7 +456,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "INSERT INTO clase_baile_detalle (hora_inicio_asesoria, horario_fk,estado) VALUES (@horainicio, @plantilla, 'V' )";
+            string sql = "INSERT INTOagendamiento_detalle (hora_inicio_asesoria, horario_fk,estado) VALUES (@horainicio, @plantilla, 'V' )";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@horainicio", horainicio);
             comando.Parameters.AddWithValue("@plantilla", plantilla);
@@ -467,7 +467,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "delete horario,clase_baile_detalle from horario left join clase_baile_detalle on idhorario=horario_fk where dia= @dia and hora_inicio= @hora_inicio and horafin= @hora_fin  and plantilla_fk= @plantilla ;";
+            string sql = "delete horario,clase_baile_detalle from horario left joinagendamiento_detalle on idhorario=horario_fk where dia= @dia and hora_inicio= @hora_inicio and horafin= @hora_fin  and plantilla_fk= @plantilla ;";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@dia", dia);
             comando.Parameters.AddWithValue("@hora_inicio", hora_inicio);
@@ -525,7 +525,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "UPDATE clase_baile_detalle SET estudiante_fk = @idestudiante, estado='S' WHERE hora_inicio_asesoria = @fecha ;";
+            string sql = "UPDATEagendamiento_detalle SET estudiante_fk = @idestudiante, estado='S' WHERE hora_inicio_asesoria = @fecha ;";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@idestudiante", idestudiante);
             comando.Parameters.AddWithValue("@fecha", fecha);
@@ -535,7 +535,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "update clase_baile_detalle inner join horario on horario_fk=idhorario set agenda_detalle.hora_inicio_asesoria= @hora , horario.dia= @dia where idagenda_detalle= @id ";
+            string sql = "updateagendamiento_detalle inner join horario on horario_fk=idhorario set agenda_detalle.hora_inicio_asesoria= @hora , horario.dia= @dia where idagenda_detalle= @id ";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@hora", hora);
 
@@ -549,7 +549,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "update clase_baile_detalle set estado= @estado where idagenda_detalle= @id ";
+            string sql = "updateagendamiento_detalle set estado= @estado where idagenda_detalle= @id ";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@estado", estado);
@@ -561,7 +561,7 @@ namespace Prueba1
         {
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "UPDATE clase_baile_detalle inner join horario on horario_fk=idhorario inner join plantilla_clase_baile on plantilla_fk=idplantilla_agenda SET observaciones = @observacion, asistencia= @asistio  WHERE hora_inicio_asesoria = @fecha  and dia= @dia  and tema= @tema  ;";
+            string sql = "UPDATEagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda SET observaciones = @observacion, asistencia= @asistio  WHERE hora_inicio_asesoria = @fecha  and dia= @dia  and tema= @tema  ;";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             comando.Parameters.AddWithValue("@observacion", observacion);
             comando.Parameters.AddWithValue("@asistio", asistio);

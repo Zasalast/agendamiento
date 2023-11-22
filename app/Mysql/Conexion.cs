@@ -14,7 +14,7 @@ namespace Prueba1
             string puerto = "3306";
             string usuario = "root";
             string password = "";
-            string bd = "alejandra-valeria-citas";
+            string bd = "proyecto-agendamiento-valeria";
 
 
             //cadena de conexion

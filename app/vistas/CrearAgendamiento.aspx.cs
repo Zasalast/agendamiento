@@ -13,7 +13,7 @@ namespace Prueba1.app.vistas
         string tiempo, fechainicio, fechafin, idmax, idetalle;
         protected void Page_Load(object sender, EventArgs e)
         {
-            contrll.controllistadinamicarol(DropDownList5, "nombre_plantilla", "idplantilla_agenda", "plantilla_clase_baile where usuario_fk_plantilla= " + app.Session.id_usuario + "");
+            contrll.controllistadinamicarol(DropDownList5, "nombre_plantilla", "idplantilla_agenda", " plantilla_agendamiento where usuario_fk_plantilla= " + app.Session.id_usuario + "");
 
         }
 
@@ -117,9 +117,9 @@ namespace Prueba1.app.vistas
             // crear horario  y agenda detalle
             contrll.controlinsertarhorario(darnombre(), TextBox3.Text, TextBox4.Text, int.Parse(DropDownList5.SelectedValue));
             idmax = contrll.controltraertiempo("select MAX(idhorario) from horario ;", idmax);
-            tiempo = contrll.controltraertiempo("select rango_tiempo_minutos from plantilla_clase_baile where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
-            fechainicio = contrll.controltraertiempo("select fecha_inicio from plantilla_clase_baile where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
-            fechafin = contrll.controltraertiempo("select fecha_fin from plantilla_clase_baile where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
+            tiempo = contrll.controltraertiempo("select rango_tiempo_minutos from  plantilla_agendamiento where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
+            fechainicio = contrll.controltraertiempo("select fecha_inicio from  plantilla_agendamiento where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
+            fechafin = contrll.controltraertiempo("select fecha_fin from  plantilla_agendamiento where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", tiempo);
             //           hoinicio = control.controltraertiempo("select hora_inicio from plantilla_agenda where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", hoinicio);
             //           hofin = control.controltraertiempo("select hora_fin from plantilla_agenda where usuario_fk_plantilla=" + app.Session.id_usuario + " and idplantilla_agenda= " + int.Parse(DropDownList5.SelectedValue) + "", hofin);
 
@@ -228,7 +228,7 @@ namespace Prueba1.app.vistas
 
         public void consulta()
         {
-            contrll.controlconsulta(GridView1, "select  fecha_inicio, fecha_fin, dia, hora_inicio, horafin  from horario inner join plantilla_clase_baile on plantilla_fk=idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario + " and idplantilla_agenda=" + int.Parse(DropDownList5.SelectedItem.Value) + "");
+            contrll.controlconsulta(GridView1, "select  fecha_inicio, fecha_fin, dia, hora_inicio, horafin  from horario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario + " and idplantilla_agenda=" + int.Parse(DropDownList5.SelectedItem.Value) + "");
         }
 
 
@@ -237,7 +237,7 @@ namespace Prueba1.app.vistas
         {
             if (DropDownList5.SelectedItem.Selected)
             {
-                contrll.controlconsulta(GridView1, "select  fecha_inicio as 'Inicio de Clase', fecha_fin as 'Fin de Clase', dia as Dia, hora_inicio as 'Hora Inicio', horafin as Fin  from horario inner join plantilla_clase_baile on plantilla_fk=idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario + " and idplantilla_agenda=" + int.Parse(DropDownList5.SelectedItem.Value) + "");
+                contrll.controlconsulta(GridView1, "select  fecha_inicio as 'Inicio de Clase', fecha_fin as 'Fin de Clase', dia as Dia, hora_inicio as 'Hora Inicio', horafin as Fin  from horario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario + " and idplantilla_agenda=" + int.Parse(DropDownList5.SelectedItem.Value) + "");
             }
         }
 
@@ -279,7 +279,7 @@ namespace Prueba1.app.vistas
         {
             //Set the edit index.
 
-            idetalle = contrll.controltraertiempo("select idagenda_detalle from clase_baile_detalle where hora_inicio_asesoria='" + Convert.ToDateTime(GridView1.Rows[e.NewEditIndex].Cells[3].Text).ToString("yyyy-MM-dd HH:mm:ss") + "' ;", idetalle);
+            idetalle = contrll.controltraertiempo("select idagenda_detalle fromagendamiento_detalle where hora_inicio_asesoria='" + Convert.ToDateTime(GridView1.Rows[e.NewEditIndex].Cells[3].Text).ToString("yyyy-MM-dd HH:mm:ss") + "' ;", idetalle);
 
             GridView1.EditIndex = e.NewEditIndex;
             Response.Write(idetalle);
@@ -319,7 +319,7 @@ namespace Prueba1.app.vistas
         private void BindData()
         {
             //GridView1.DataSource = Session["TaskTable"];
-            contrll.controlconsulta(GridView1, "select  dia, hora_inicio_asesoria from clase_baile_detalle inner join horario on horario_fk=idhorario inner join plantilla_clase_baile on plantilla_fk = idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario);
+            contrll.controlconsulta(GridView1, "select  dia, hora_inicio_asesoria fromagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk = idplantilla_agenda where usuario_fk_plantilla= " + app.Session.id_usuario);
         }
 
     }

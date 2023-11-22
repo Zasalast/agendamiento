@@ -15,7 +15,7 @@ namespace Prueba1.app.vistas
         control contrll = new control();
         protected void Page_Load(object sender, EventArgs e)
         {
-            contrll.controllistadinamicarol(DropDownList2, "tema", "idplantilla_agenda", "plantilla_clase_baile group by tema ;");
+            contrll.controllistadinamicarol(DropDownList2, "tema", "idplantilla_agenda", " plantilla_agendamiento group by tema ;");
 
         }
 
@@ -43,11 +43,11 @@ namespace Prueba1.app.vistas
             }
             if (DropDownList2.SelectedIndex != 0 && !String.IsNullOrEmpty(from.Text) && !string.IsNullOrEmpty(to.Text))
             {
-                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as Duracion, tema as Genero, dia as Dia, hora_inicio_asesoria as Fecha from clase_baile_detalle inner join horario on horario_fk=idhorario inner join plantilla_clase_baile on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' and hora_inicio_asesoria between '" + desde + "' and '" + hasta + "'   group by idagenda_detalle  ");
+                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as Duracion, tema as Genero, dia as Dia, hora_inicio_asesoria as Fecha fromagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' and hora_inicio_asesoria between '" + desde + "' and '" + hasta + "'   group by idagenda_detalle  ");
             }
             else
             {
-                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as duracion_minutos, tema, dia, hora_inicio_asesoria as fecha_hora from clase_baile_detalle inner join horario on horario_fk=idhorario inner join plantilla_clase_baile on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' or hora_inicio_asesoria between '" + desde + "' and '" + hasta + "' and estado='v'  group by idagenda_detalle  ");
+                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as duracion_minutos, tema, dia, hora_inicio_asesoria as fecha_hora fromagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' or hora_inicio_asesoria between '" + desde + "' and '" + hasta + "' and estado='v'  group by idagenda_detalle  ");
             }
         }
 
@@ -57,7 +57,7 @@ namespace Prueba1.app.vistas
             MySqlDataReader reader;
             MySqlConnection conexion = Conexion.getConexion();
             conexion.Open();
-            string sql = "select idagenda_detalle,hora_inicio_asesoria from clase_baile_detalle  where estado='V'  ;";
+            string sql = "select idagenda_detalle,hora_inicio_asesoria fromagendamiento_detalle  where estado='V'  ;";
             MySqlCommand comando = new MySqlCommand(sql, conexion);
             reader = comando.ExecuteReader();
             while (reader.Read())

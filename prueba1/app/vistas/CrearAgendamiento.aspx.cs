@@ -27,14 +27,15 @@ namespace Prueba1.app.vistas
 
                 if (respuesta.Length > 0)
                 {
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertIns", "alert('" + respuesta + "');", true);
+                 
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertIns", "alert('Se creo correctamente');", true);
 
 
 
                 }
                 else
                 {
-
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertIns", "alert('No se creo correctamente');", true);
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alertIns", "alert('');", true);
                 }
             }
@@ -44,7 +45,7 @@ namespace Prueba1.app.vistas
             }
             limpiar();
 
-            Response.Redirect("CrearBaile.aspx");
+            Response.Redirect("CrearAgendamiento.aspx");
         }
 
 

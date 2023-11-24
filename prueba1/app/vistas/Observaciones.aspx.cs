@@ -78,7 +78,7 @@ namespace Prueba1.app.vistas
 
         public void consulta()
         {
-            contrll.controlconsulta(RowObservacion, "select concat(estudiante.primer_nombre,' ', estudiante.primer_apellido) as Bailarin, tema as Genero, dia as Dia, hora_inicio_asesoria as 'Fecha y Hora' fromagendamiento_detalle inner join  usuario as estudiante on estudiante_fk=estudiante.id_usuario  inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario as docente on usuario_fk_plantilla=docente.id_usuario where estado='S' and docente.id_usuario=" + app.Session.id_usuario + " and observaciones is null group by idagenda_detalle  ;");
+            contrll.controlconsulta(RowObservacion, "select concat(estudiante.primer_nombre,' ', estudiante.primer_apellido) as Bailarin, tema as Tema, dia as Dia, hora_inicio_asesoria as 'Fecha y Hora' fromagendamiento_detalle inner join  usuario as estudiante on estudiante_fk=estudiante.id_usuario  inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario as docente on usuario_fk_plantilla=docente.id_usuario where estado='S' and docente.id_usuario=" + app.Session.id_usuario + " and observaciones is null group by idagenda_detalle  ;");
         }
 
 

@@ -1,1 +1,690 @@
-{"RootPath":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1","ProjectFileName":"Proyecto.csproj","Configuration":"Debug|AnyCPU","FrameworkPath":"","Sources":[{"SourceFile":"app\\controles\\control.cs"},{"SourceFile":"app\\controles\\Correo.cs"},{"SourceFile":"app\\controles\\Excel.cs"},{"SourceFile":"app\\controles\\Pdf.cs"},{"SourceFile":"app\\modelo\\Modelo.cs"},{"SourceFile":"app\\Mysql\\Conexion.cs"},{"SourceFile":"app\\controles\\Session.cs"},{"SourceFile":"app\\controles\\Usuarios.cs"},{"SourceFile":"app\\vistas\\CambiarContrase.aspx.cs"},{"SourceFile":"app\\vistas\\CambiarContrase.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CambiarNombreRol.aspx.cs"},{"SourceFile":"app\\vistas\\CambiarNombreRol.aspx.designer.cs"},{"SourceFile":"app\\vistas\\ConsultarUsuarios.aspx.cs"},{"SourceFile":"app\\vistas\\ConsultarUsuarios.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CrearAccion.aspx.cs"},{"SourceFile":"app\\vistas\\CrearAccion.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CrearBaile.aspx.cs"},{"SourceFile":"app\\vistas\\CrearBaile.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CrearPermisos.aspx.cs"},{"SourceFile":"app\\vistas\\CrearPermisos.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CrearRol.aspx.cs"},{"SourceFile":"app\\vistas\\CrearRol.aspx.designer.cs"},{"SourceFile":"app\\vistas\\CrearUsuario.aspx.cs"},{"SourceFile":"app\\vistas\\CrearUsuario.aspx.designer.cs"},{"SourceFile":"app\\vistas\\EliminarAccion.aspx.cs"},{"SourceFile":"app\\vistas\\EliminarAccion.aspx.designer.cs"},{"SourceFile":"app\\vistas\\EliminarRol.aspx.cs"},{"SourceFile":"app\\vistas\\EliminarRol.aspx.designer.cs"},{"SourceFile":"app\\vistas\\index.aspx.cs"},{"SourceFile":"app\\vistas\\index.aspx.designer.cs"},{"SourceFile":"app\\vistas\\ModificarRol.aspx.cs"},{"SourceFile":"app\\vistas\\ModificarRol.aspx.designer.cs"},{"SourceFile":"app\\vistas\\Observaciones.aspx.cs"},{"SourceFile":"app\\vistas\\Observaciones.aspx.designer.cs"},{"SourceFile":"app\\vistas\\PaginaMaestra.aspx.cs"},{"SourceFile":"app\\vistas\\PaginaMaestra.aspx.designer.cs"},{"SourceFile":"app\\vistas\\Principal.Master.cs"},{"SourceFile":"app\\vistas\\Principal.Master.designer.cs"},{"SourceFile":"app\\vistas\\Quejas.aspx.cs"},{"SourceFile":"app\\vistas\\Quejas.aspx.designer.cs"},{"SourceFile":"app\\vistas\\QuienesSomos.aspx.cs"},{"SourceFile":"app\\vistas\\QuienesSomos.aspx.designer.cs"},{"SourceFile":"app\\vistas\\registro.aspx.cs"},{"SourceFile":"app\\vistas\\registro.aspx.designer.cs"},{"SourceFile":"app\\vistas\\ReporteAdmin.aspx.cs"},{"SourceFile":"app\\vistas\\ReporteAdmin.aspx.designer.cs"},{"SourceFile":"app\\vistas\\ReporteEstuBailarin.aspx.cs"},{"SourceFile":"app\\vistas\\ReporteEstuBailarin.aspx.designer.cs"},{"SourceFile":"app\\vistas\\Reportes.aspx.cs"},{"SourceFile":"app\\vistas\\Reportes.aspx.designer.cs"},{"SourceFile":"app\\vistas\\SolicitarBaile.aspx.cs"},{"SourceFile":"app\\vistas\\SolicitarBaile.aspx.designer.cs"},{"SourceFile":"app\\vistas\\VerBailesSolicitados.aspx.cs"},{"SourceFile":"app\\vistas\\VerBailesSolicitados.aspx.designer.cs"},{"SourceFile":"Properties\\AssemblyInfo.cs"},{"SourceFile":"obj\\Debug\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"}],"References":[{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Portable.BouncyCastle.1.8.9\\lib\\net40\\BouncyCastle.Crypto.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.barcodes.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.commons.7.2.2\\lib\\net461\\itext.commons.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.forms.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.io.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.kernel.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.layout.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.pdfa.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.sign.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.styledxmlparser.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.svg.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Bcl.AsyncInterfaces.5.0.0\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\\lib\\net45\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Microsoft.CSharp.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\\lib\\net461\\Microsoft.Extensions.DependencyInjection.Abstractions.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.DependencyInjection.5.0.0\\lib\\net461\\Microsoft.Extensions.DependencyInjection.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Logging.Abstractions.5.0.0\\lib\\net461\\Microsoft.Extensions.Logging.Abstractions.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Logging.5.0.0\\lib\\net461\\Microsoft.Extensions.Logging.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Options.5.0.0\\lib\\net461\\Microsoft.Extensions.Options.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Primitives.5.0.0\\lib\\net461\\Microsoft.Extensions.Primitives.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Data.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Data.EntityFramework.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Web.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Buffers.4.5.1\\lib\\net461\\System.Buffers.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.ComponentModel.DataAnnotations.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Configuration.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.DataSetExtensions.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Diagnostics.DiagnosticSource.5.0.0\\lib\\net46\\System.Diagnostics.DiagnosticSource.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.EnterpriseServices.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Bezier.0.9.3.5\\lib\\netstandard2.0\\System.Geometry.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Font.0.3.0.3\\lib\\netstandard2.0\\System.Geometry.Text.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Memory.4.5.4\\lib\\net461\\System.Memory.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Numerics.Vectors.4.5.0\\lib\\net46\\System.Numerics.Vectors.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Runtime.CompilerServices.Unsafe.5.0.0\\lib\\net45\\System.Runtime.CompilerServices.Unsafe.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Threading.Tasks.Extensions.4.5.4\\lib\\net461\\System.Threading.Tasks.Extensions.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.ValueTuple.4.5.0\\lib\\net47\\System.ValueTuple.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.ApplicationServices.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.DynamicData.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Entity.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Extensions.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Services.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""},{"Reference":"C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll","ResolvedFrom":"","OriginalItemSpec":"","Name":"","EmbedInteropTypes":false,"CopyLocal":false,"IsProjectReference":false,"ProjectPath":""}],"Analyzers":[],"Outputs":[{"OutputItemFullPath":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\Prueba1.dll","OutputItemRelativePath":"Prueba1.dll"},{"OutputItemFullPath":"C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\Prueba1.pdb","OutputItemRelativePath":"Prueba1.pdb"}],"CopyToOutputEntries":[]}
+{
+    "RootPath": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1",
+    "ProjectFileName": "Proyecto.csproj",
+    "Configuration": "Debug|AnyCPU",
+    "FrameworkPath": "",
+    "Sources": [
+        {
+            "SourceFile": "app\\controles\\control.cs"
+        },
+        {
+            "SourceFile": "app\\controles\\Correo.cs"
+        },
+        {
+            "SourceFile": "app\\controles\\Excel.cs"
+        },
+        {
+            "SourceFile": "app\\controles\\Pdf.cs"
+        },
+        {
+            "SourceFile": "app\\modelo\\Modelo.cs"
+        },
+        {
+            "SourceFile": "app\\Mysql\\Conexion.cs"
+        },
+        {
+            "SourceFile": "app\\controles\\Session.cs"
+        },
+        {
+            "SourceFile": "app\\controles\\Usuarios.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CambiarContrase.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CambiarContrase.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CambiarNombreRol.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CambiarNombreRol.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ConsultarUsuarios.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ConsultarUsuarios.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearAccion.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearAccion.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearAgendamiento.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearAgendamiento.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearPermisos.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearPermisos.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearRol.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearRol.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearUsuario.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\CrearUsuario.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\EliminarAccion.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\EliminarAccion.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\EliminarRol.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\EliminarRol.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\index.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\index.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ModificarRol.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ModificarRol.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Observaciones.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Observaciones.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\PaginaMaestra.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\PaginaMaestra.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Principal.Master.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Principal.Master.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Quejas.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Quejas.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\QuienesSomos.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\QuienesSomos.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\registro.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\registro.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ReporteAdmin.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ReporteAdmin.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ReporteEstuAgendamiento.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\ReporteEstuAgendamiento.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Reportes.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\Reportes.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\SolicitarAgendamiento.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\SolicitarAgendamiento.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\VerAgendamientosSolicitados.aspx.cs"
+        },
+        {
+            "SourceFile": "app\\vistas\\VerAgendamientosSolicitados.aspx.designer.cs"
+        },
+        {
+            "SourceFile": "Properties\\AssemblyInfo.cs"
+        },
+        {
+            "SourceFile": "obj\\Debug\\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs"
+        }
+    ],
+    "References": [
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Portable.BouncyCastle.1.8.9\\lib\\net40\\BouncyCastle.Crypto.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.barcodes.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.commons.7.2.2\\lib\\net461\\itext.commons.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.forms.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.io.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.kernel.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.layout.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.pdfa.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.sign.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.styledxmlparser.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\itext7.7.2.2\\lib\\net461\\itext.svg.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Bcl.AsyncInterfaces.5.0.0\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\\lib\\net45\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\Microsoft.CSharp.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\\lib\\net461\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.DependencyInjection.5.0.0\\lib\\net461\\Microsoft.Extensions.DependencyInjection.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Logging.Abstractions.5.0.0\\lib\\net461\\Microsoft.Extensions.Logging.Abstractions.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Logging.5.0.0\\lib\\net461\\Microsoft.Extensions.Logging.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Options.5.0.0\\lib\\net461\\Microsoft.Extensions.Options.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Microsoft.Extensions.Primitives.5.0.0\\lib\\net461\\Microsoft.Extensions.Primitives.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\mscorlib.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Data.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Data.EntityFramework.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\MySql.Web.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Buffers.4.5.1\\lib\\net461\\System.Buffers.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.ComponentModel.DataAnnotations.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Configuration.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Core.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.DataSetExtensions.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Data.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Diagnostics.DiagnosticSource.5.0.0\\lib\\net46\\System.Diagnostics.DiagnosticSource.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Drawing.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.EnterpriseServices.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Bezier.0.9.3.5\\lib\\netstandard2.0\\System.Geometry.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\Font.0.3.0.3\\lib\\netstandard2.0\\System.Geometry.Text.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Memory.4.5.4\\lib\\net461\\System.Memory.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Numerics.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Numerics.Vectors.4.5.0\\lib\\net46\\System.Numerics.Vectors.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Runtime.CompilerServices.Unsafe.5.0.0\\lib\\net45\\System.Runtime.CompilerServices.Unsafe.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.Threading.Tasks.Extensions.4.5.4\\lib\\net461\\System.Threading.Tasks.Extensions.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\packages\\System.ValueTuple.4.5.0\\lib\\net47\\System.ValueTuple.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.ApplicationServices.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.DynamicData.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Entity.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Extensions.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Web.Services.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        },
+        {
+            "Reference": "C:\\Program Files (x86)\\Reference Assemblies\\Microsoft\\Framework\\.NETFramework\\v4.7.2\\System.Xml.Linq.dll",
+            "ResolvedFrom": "",
+            "OriginalItemSpec": "",
+            "Name": "",
+            "EmbedInteropTypes": false,
+            "CopyLocal": false,
+            "IsProjectReference": false,
+            "ProjectPath": ""
+        }
+    ],
+    "Analyzers": [],
+    "Outputs": [
+        {
+            "OutputItemFullPath": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\Prueba1.dll",
+            "OutputItemRelativePath": "Prueba1.dll"
+        },
+        {
+            "OutputItemFullPath": "C:\\Users\\ZASALAS\\Downloads\\proyecto citas\\Prueba1\\bin\\Prueba1.pdb",
+            "OutputItemRelativePath": "Prueba1.pdb"
+        }
+    ],
+    "CopyToOutputEntries": []
+}

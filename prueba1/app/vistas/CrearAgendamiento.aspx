@@ -24,7 +24,7 @@
         placeholder="Nombre Agendamiento" style="position:relative; top: 10px; left:150px"
         onkeypress="return SoloLetras(event)"></asp:TextBox>
       <asp:TextBox ID="NombreTema" runat="server" Height="34px" Width="310px" CssClass="inp4"
-        placeholder="Nombre Del Genero" style="position:relative; top: 10px; left:300px"
+        placeholder="Nombre  Tematica" style="position:relative; top: 10px; left:300px"
         onkeypress="return SoloLetras(event)"></asp:TextBox><br />
 
       <asp:DropDownList ID="DropDownList1" runat="server" style="position:relative; top: 35px; left:175px" Height="35px"

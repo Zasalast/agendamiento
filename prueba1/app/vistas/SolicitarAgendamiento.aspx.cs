@@ -51,7 +51,7 @@ namespace Prueba1.app.vistas
             }
             if (DropDownList2.SelectedIndex != 0 && !String.IsNullOrEmpty(from.Text) && !string.IsNullOrEmpty(to.Text))
             {
-                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as Duracion, tema as Genero, dia as Dia, hora_inicio_asesoria as Fecha fromagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' and hora_inicio_asesoria between '" + desde + "' and '" + hasta + "'   group by idagenda_detalle  ");
+                contrll.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as Instructor, rango_tiempo_minutos as Duracion, tema as Tema, dia as Dia, hora_inicio_asesoria as Fecha fromagendamiento_detalle inner join horario on horario_fk=idhorario inner join  plantilla_agendamiento on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where estado='V' and tema='" + DropDownList2.SelectedItem.ToString() + "' and hora_inicio_asesoria between '" + desde + "' and '" + hasta + "'   group by idagenda_detalle  ");
             }
             else
             {

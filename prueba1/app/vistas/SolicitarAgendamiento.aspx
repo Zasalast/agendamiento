@@ -57,7 +57,7 @@
 
 
             <asp:DropDownList ID="DropDownList2" runat="server" Height="35px" Width="280px" CssClass="inp4">
-                <asp:ListItem Value="0">Seleccione El Genero</asp:ListItem>
+                <asp:ListItem Value="0">Seleccione el Tema</asp:ListItem>
             </asp:DropDownList>
 
 

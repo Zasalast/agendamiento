@@ -190,7 +190,7 @@ namespace Prueba1
                 conexion.Close();
                 adapter.Dispose();
                 dataset.Dispose();
-                datatable.Dispose();
+               // datatable.Dispose();
             }
         }
 

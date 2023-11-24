@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Principal.master.cs" Inherits="Prueba1.app.vistas.Principal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" href="../Stilos/PrincipalStyle.css">
+ <link href="~/app/font.css" rel="stylesheet" type="text/css" runat="server">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet" type="text/css" runat="server">
+
+        <script src="../JavaScript/validacion.js" ></script>
+      <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+  
+</head>
+<body>
+       <form id="formatorcerrar" runat="server">
+            
+      <header  class="header">
+           <div class="container">
+           <div class="btn-menu">
+              
+                   <label for="btn-menu">☰</label><br>
+            </div>
+            <div class="logo">
+
+                   <asp:Label id="label1" CssClass="label1" runat="server" Text="Label"></asp:Label>
+                 
+                </div>
+     
+</div>
+</header>
+        <div class="capa"></div>
+
+         <input type="checkbox" id="btn-menu">
+         <div class="container-menu">
+         <div class="cont-menu" >
+
+          
+   <nav >
+    <img src="../img/administracion.png" alt="User">
+
+        <asp:Menu ID="Menu1"  runat="server" Height="45px"  Orientation="Vertical" Width="100%">
+            <DynamicHoverStyle BackColor="#fff" ForeColor="White" />
+            <DynamicMenuItemStyle HorizontalPadding="30px" VerticalPadding="5px" />
+            <DynamicMenuStyle BackColor="#fff" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <StaticMenuItemStyle HorizontalPadding="30px" VerticalPadding="15px" />
+            <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+
+            <asp:Button ID="ButtonCerrarlick"  CssClass="boton1" runat="server" Text="SALIR" OnClick="ButtonCerrarlick_Click" />
+    </nav>
+              
+<label for="btn-menu">✖️</label>
+        </div>
+</div>
+   
+       <div Class="cuerpo">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+             
+             
+            </asp:ContentPlaceHolder>
+        </div>
+      </form>
+</body>
+</html>

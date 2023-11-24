@@ -1,0 +1,832 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans;
+}
+
+body {
+    background: url(../img/principal.png);
+    background-size: cover;
+    background-color: #6a0572;
+     background-repeat: repeat;
+   
+    opacity: 1;
+    background-image: radial-gradient(#efe6e6 2px, transparent 2px), radial-gradient(#efe6e6 2px, #f7f7ff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px; 
+}
+
+.capa {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+/*Estilos para el encabezado*/
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(217, 72, 193, 0.5);
+}
+
+.container .btn-menu, .logo {
+    float: left;
+    line-height: 100px;
+    margin-left: 30px;
+}
+
+
+
+    .container .btn-menu, .logo h1 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+        .container .btn-menu label {
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: -15px;
+            margin-right: 30px;
+        }
+
+            .container .btn-menu label:hover {
+                border-bottom: 2px solid #c7c7c7;
+            }
+
+    .logo .label1 {
+        color: #fff;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+.container .menu {
+    float: right;
+    line-height: 100px;
+}
+
+    .container .menu .a {
+        display: inline-block;
+        padding: 15px;
+        line-height: normal;
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.3s ease;
+        border-bottom: 2px solid transparent;
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    .container .menu a:hover {
+        border-bottom: 2px solid #c7c7c7;
+        padding-bottom: 5px;
+    }
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu {
+    display: none;
+}
+
+.container-menu {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    background-color: rgba(178, 72, 217, 0.5);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0%);
+}
+
+.cont-menu nav {
+    transform: translateY(15%);
+}
+
+    .cont-menu nav img {
+        margin-top: -75px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+        width: 90%;
+        border-radius: 50%;
+    }
+
+    .cont-menu nav .salir {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+        font-size: 20px;
+        margin-top: 250px;
+    }
+
+    .cont-menu nav .a1 {
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;
+        font-size: 20px;
+    }
+
+    .cont-menu nav a:hover {
+        border-left: 5px solid #c7c7c7;
+        background: #1f1f1f;
+    }
+
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+
+
+.cuerpo .imagen {
+    margin-left: 250px;
+    width: 25%;
+}
+
+.cuerpo .imagen2 {
+    margin-left: 500px;
+    width: 25%;
+}
+
+
+
+.boton1 {
+    width: 35%;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(156, 39, 176, 0.5);
+    color: #fff;
+    margin-top: 480px;
+    margin-left: 40px;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .boton1:hover {
+        border: 1px solid white;
+        width: 70%;
+        cursor: pointer;
+    }
+
+    .boton1:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton1:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+/*Contenedor*/
+
+.cuerpo {
+    width: 75%;
+    height: 950px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 120px;
+    box-shadow: 10px 20px 20px rgb(0, 0, 0);
+    margin-left: 380px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+/* IMAGENES DE CONTENT PLACE HOLDER */
+
+.cuadro1 {
+    animation: movimiento 2.5s linear infinite;
+    border: 0px solid black;
+}
+
+.cuadro3 {
+    animation: movimiento 2.5s linear infinite;
+    border: 0px solid black;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+#Menu1 a.static {
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    color: beige;
+}
+
+
+
+
+.cuadro2 {
+    width: 75%;
+    margin-right: 150px;
+    margin-top: 80px;
+    border: 1px solid white;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(154, 72, 217, 0.636);
+}
+
+.cuadro1 img {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 70%;
+    margin-left: 30px;
+}
+
+.cuadro3 img {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    width: 70%;
+    margin-left: 30px;
+}
+
+
+.fondo2 img {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 40%;
+    margin-left: 460px;
+}
+
+.fondo3 img {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 20%;
+    margin-left: 10px;
+}
+
+
+
+/*STILOS PARA LAS PAGINAS DE ADMINISTRADOR*/
+
+/*Stilos de  pagina hijas ADMINISTRADOR */
+
+.dinamico {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dinamico2 {
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.dinamico3 {
+    margin-top: 100px;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border: 3px solid white;
+    width: 80%;
+    margin-left: 180px;
+    background-color: rgba(72 217 154 / 50%);
+}
+
+.la2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.la3 {
+    color: #fff;
+    font-size: 15px;
+}
+
+.la4 {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 500px;
+}
+
+.la5 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+.la6 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 15px;
+}
+
+.la7 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 15px;
+}
+
+.inp {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+}
+
+    .inp:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp2 {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: 200px;
+}
+
+    .inp2:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp3 {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: 30px;
+}
+
+    .inp3:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp4 {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: 36px;
+}
+
+    .inp4:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp5 {
+    background-color: rgba(255, 255, 255, .1);
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: -290px;
+    margin-bottom: 35px;
+}
+
+    .inp5:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp6 {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-bottom: 35px;
+}
+
+    .inp6:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.fondo form .inp:focus {
+    outline: 0px;
+    background-color: rgba(255, 255, 255, .6);
+    border: solid 2px rgba(255,255,255,.01);
+    color: #000;
+}
+
+.inp7 {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-bottom: 35px;
+    margin-left: 0px;
+}
+
+    .inp7:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp8 {
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+    .inp8:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+
+.inp9 {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: 300px;
+}
+
+    .inp9:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.inp10 {
+    background-color: rgba(255, 255, 255, .1);
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 250ms ease;
+    margin-left: 248px;
+}
+
+    .inp10:focus {
+        outline: 0px;
+        background-color: rgba(255, 255, 255, .6);
+        border: solid 2px rgba(255,255,255,.01);
+        color: #000;
+    }
+
+.boton2 {
+    width: 35%;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(64 64 64 / 50%);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+    .boton2:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 50%;
+    }
+
+    .boton2:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton2:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+.boton3 {
+    width: 50%;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+    .boton3:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 70%;
+    }
+
+    .boton3:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton3:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+.boton4 {
+    width: 50%;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+    .boton4:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 60%;
+    }
+
+    .boton4:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton4:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+
+.boton5 {
+    width: 25%;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 250px;
+    border-bottom: 30px;
+}
+
+    .boton5:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 30%;
+    }
+
+    .boton5:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton5:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+.boton6 {
+    width: 25%;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 500px;
+    border-bottom: 30px;
+}
+
+    .boton6:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 30%;
+    }
+
+    .boton6:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton6:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+.boton7 {
+    width: 30%;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(255, 0, 0, 0.0);
+    color: #fff;
+    transition: all 200ms ease;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 0px;
+    border-bottom: 30px;
+}
+
+    .boton7:hover {
+        cursor: pointer;
+        border: 2px solid red;
+        width: 50%;
+    }
+
+    .boton7:active {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+    .boton7:focus {
+        background-color: rgba(255, 255, 255,0.2);
+        outline: 0;
+        border: 0;
+        border-radius: 5px;
+    }
+
+.registro {
+    width: 150%;
+    margin-top: 50px;
+    margin-right: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.registro3 {
+    width: 100%;
+    margin-right: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(72 217 154 / 50%);
+}
+
+.registro4 {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 62%;
+    margin-right: 20px;
+    overflow: scroll;
+    background-color: rgba(72 217 154 / 50%);
+}
+
+.scr {
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/

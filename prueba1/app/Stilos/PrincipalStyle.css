@@ -361,7 +361,7 @@ label {
     border: 3px solid white;
     width: 80%;
     margin-left: 180px;
-    background-color: rgba(72 217 154 / 50%);
+    background-color: rgba(178, 72, 217, 0.581);
 }
 
 .la2 {
@@ -807,7 +807,7 @@ label {
     margin-right: 100px;
     border: 1px solid white;
     border-radius: 10px;
-    background-color: rgba(72 217 154 / 50%);
+    background-color: rgba(159, 72, 217, 0.5);
 }
 
 .registro4 {
@@ -818,7 +818,7 @@ label {
     height: 62%;
     margin-right: 20px;
     overflow: scroll;
-    background-color: rgba(72 217 154 / 50%);
+    background-color: rgba(166, 72, 217, 0.5);
 }
 
 .scr {

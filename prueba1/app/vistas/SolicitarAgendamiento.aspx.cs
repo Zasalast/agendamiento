@@ -23,8 +23,16 @@ namespace Prueba1.app.vistas
         {
             string str1 = GridView1.Rows[e.RowIndex].Cells[5].Text;
 
-            contrll.controlinsertarestudiante(app.Session.id_usuario, Convert.ToDateTime(str1).ToString("yyyy-MM-dd HH:mm:ss"));
-            // control.controlconsulta(GridView1, "select concat(primer_nombre,' ', primer_apellido) as docente, rango_tiempo_minutos as duracion_minutos, tema, dia, hora_inicio_asesoria as fecha_hora from agenda_detalle inner join horario on horario_fk=idhorario inner join plantilla_agenda on plantilla_fk=idplantilla_agenda inner join usuario on usuario_fk_plantilla=id_usuario where tema='"+DropDownList2.SelectedItem.ToString()+"' or hora_inicio_asesoria between '"+ Convert.ToDateTime(from.Text).ToString("yyyy-MM-dd HH:mm:ss ") + "' and"+ Convert.ToDateTime(to.Text).ToString("yyyy-MM-dd HH:mm:ss") + " and  is  null; ");
+            //contrll.controlinsertarestudiante(app.Session.id_usuario, Convert.ToDateTime(str1).ToString("yyyy-MM-dd HH:mm:ss"));
+            contrll.controlconsulta(GridView1, "SELECT " +
+    "CONCAT(u.primer_nombre, ' ', u.primer_apellido) AS usuario, " +
+    "pa.rango_tiempo_minutos AS duracion_minutos, " +
+    "pa.tema, " +
+    "pa.fecha_inicio AS fecha_hora " +
+    "FROM plantilla_agendamiento pa " +
+    "INNER JOIN usuario u ON pa.usuario_fk_plantilla = u.id_usuario " +
+    "WHERE pa.tema = '" + DropDownList2.SelectedItem.ToString() + "' " +
+    "OR pa.fecha_inicio BETWEEN '" + Convert.ToDateTime(from.Text).ToString("yyyy-MM-dd HH:mm:ss") + "' AND '" + Convert.ToDateTime(to.Text).ToString("yyyy-MM-dd HH:mm:ss") + "' AND pa IS NULL;");
             consulta();
         }
 
